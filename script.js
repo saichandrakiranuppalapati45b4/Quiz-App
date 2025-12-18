@@ -16,48 +16,48 @@ const progressBar = document.getElementById("progress");
 
 const quizQuestions = [
   {
-    question: "What is the capital of France?",
+    question: "What does HTML stand for?",
     answers: [
-      { text: "London", correct: false },
-      { text: "Berlin", correct: false },
-      { text: "Paris", correct: true },
-      { text: "Madrid", correct: false },
+      { text: "Hyper Text Markup Language", correct: true },
+      { text: "High Tech Modern Language", correct: false },
+      { text: "Home Tool Markup Language", correct: false },
+      { text: "Hyperlink and Text Markup Language", correct: false },
     ],
   },
   {
-    question: "Which planet is known as the Red Planet?",
+    question: "Which data structure works on the FIFO principle?",
     answers: [
-      { text: "Venus", correct: false },
-      { text: "Mars", correct: true },
-      { text: "Jupiter", correct: false },
-      { text: "Saturn", correct: false },
+      { text: "Stack", correct: false },
+      { text: "Queue", correct: true },
+      { text: "Array", correct: false },
+      { text: "Tree", correct: false },
     ],
   },
   {
-    question: "What is the largest ocean on Earth?",
+    question: "Who is known as the father of the C programming language?",
     answers: [
-      { text: "Atlantic Ocean", correct: false },
-      { text: "Indian Ocean", correct: false },
-      { text: "Arctic Ocean", correct: false },
-      { text: "Pacific Ocean", correct: true },
+      { text: "James Gosling", correct: false },
+      { text: "Bjarne Stroustrup", correct: false },
+      { text: "Guido van Rossum", correct: false },
+      { text: "Dennis Ritchie", correct: true },
     ],
   },
   {
-    question: "Which of these is NOT a programming language?",
+    question: "Which tag is used to insert an image in HTML?",
     answers: [
-      { text: "Java", correct: false },
-      { text: "Python", correct: false },
-      { text: "Banana", correct: true },
-      { text: "JavaScript", correct: false },
+      { text: "<src>", correct: false },
+      { text: "<img>", correct: true },
+      { text: "<image>", correct: false },
+      { text: "<pic>", correct: false },
     ],
   },
   {
-    question: "What is the chemical symbol for gold?",
+    question: "What is the full form of CPU?",
     answers: [
-      { text: "Go", correct: false },
-      { text: "Gd", correct: false },
-      { text: "Au", correct: true },
-      { text: "Ag", correct: false },
+      { text: "Control Processing Unit", correct: false },
+      { text: "Computer Processing Unit", correct: false },
+      { text: "Central Processing Unit", correct: true },
+      { text: "Central Program Unit", correct: false },
     ],
   },
 ];
@@ -175,4 +175,5 @@ function restartQuiz() {
   resultScreen.classList.remove("active");
 
   startQuiz();
+
 }
